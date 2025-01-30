@@ -1,11 +1,171 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" data-theme="light ">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pet Zone</title>
-</head>
-<body>
-    
-</body>
+
+    <!-- Google Font -->
+
+    <!-- FontName: adlam-display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontName: Sora -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome CDN -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- daisyUI CDN -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom tailwind config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "floral-white": "#fff9f4",
+              "banana-yellow": "#ffdc26",
+              "flave-scent": "#f9df8a",
+              "chinese-black": "#111111",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Internal CSS -->
+    <style>
+      .adlam-font {
+        font-family: "ADLaM Display", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      .sora {
+        font-family: "Sora", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      .btn-border {
+        border: 1px solid #ffdc26;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <!-- navBar Styles -->
+      <nav class="bg-floral-white">
+        <div
+          class="lg:container mx-auto navbar shadow-sm border-b-2 lg:border-b-0"
+        >
+          <div class="navbar-start flex-1 lg:flex-none">
+            <a class="btn btn-ghost text-xl">
+              <img src="assets/logo-header.png" alt="header photo" />
+              <span
+                class="sora text-2xl text-chinese-black hidden lg:inline-block"
+                >Browse<span class="text-banana-yellow">4</span>Pets</span
+              ></a
+            >
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a href="#">Find a pet</a></li>
+              <li><a href="#">Breeds</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end space-x-3 hidden lg:flex">
+            <a href="#"><i class="fa-regular fa-bell"></i></a>
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a class="btn btn-border w-24" href="#">Login</a>
+            <a class="btn bg-banana-yellow w-36" href="#">Register</a>
+          </div>
+          <div
+            class="dropdown dropdown-bottom dropdown-end flex-none inline-block lg:hidden"
+          >
+            <div tabindex="0" role="button" class="btn btn-ghost">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              class="menu menu-xs dropdown-content bg-base-100 rounded-box z-1 mt-3 w-44 p-2 shadow"
+            >
+              <li><a href="#">Find a pet</a></li>
+              <li><a href="#">Breeds</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Hero Styles -->
+      <div class="container mx-auto mt-8 mb-12">
+        <div
+          class="hero min-h-screen bg-contain lg:bg-cover bg-no-repeat flex-col items-start justify-start"
+          style="background-image: url(assets/cat-big.png)">
+          <div class="hero-content">
+            <div class="max-w-md">
+              <h1 class="mb-5 text-4xl font-bold">
+                Pamper Your Pet,<br />
+                Because They Deserve<br />
+                the Bes
+              </h1>
+              <p class="mb-5">
+                Discover a world of treats, toys, and essentials handpicked for<br />
+                your furry friends. Shop now and make tails wag with joy!
+              </p>
+              <button class="btn btn-primary bg-banana-yellow text-chinese-black border-0 w-36">
+                Find a pet
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Section -->
+    <main></main>
+
+    <!-- Footer Section -->
+    <footer></footer>
+  </body>
 </html>
