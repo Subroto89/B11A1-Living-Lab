@@ -58,7 +58,10 @@ p,button,a{
 
 .custom-style-hero-img{
   background-image: url('./assets/cat-big.png');
-  background-position: center bottom;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+
 }
 
 .custom-style-product {
