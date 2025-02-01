@@ -77,6 +77,20 @@
       .btn-border {
         border: 1px solid #ffdc26;
       }
+
+      #custom-style-product{
+        background-image: url("./assets/cute-pet-mid.png");
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        background-size: 40%;
+        height: 350px;
+      }
+      
+      #custom-style-product{
+        @media screen and (min-width:768px) {
+          background-size: 70%;
+        }
+      }
     </style>
   </head>
   <body>
@@ -85,7 +99,7 @@
       <!-- navBar Styles -->
       <nav class="bg-floral-white">
         <div
-          class="lg:container mx-auto navbar shadow-sm border-b-2 lg:border-b-0"
+          class="w-11/12 mx-auto navbar shadow-sm border-b-2 lg:border-b-0"
         >
           <div class="navbar-start flex-1 lg:flex-none">
             <a class="btn btn-ghost text-xl">
@@ -139,10 +153,13 @@
         </div>
       </nav>
       <!-- Hero Styles -->
-      <div class="container mx-auto mt-8 mb-12">
+      <div class="w-11/12 mx-auto mt-8">
         <div
-          class="hero min-h-screen bg-contain bg-no-repeat flex-col items-start justify-start"
-          style="background-image: url(assets/cat-big.png)"
+          class="hero bg-contain bg-no-repeat flex-col items-start justify-start animate-pulse"
+          style="
+            background-image: url(assets/cat-big.png);
+            background-position: center bottom;
+          "
         >
           <div class="hero-content">
             <div class="max-w-md">
@@ -157,7 +174,7 @@
                 your furry friends. Shop now and make tails wag with joy!
               </p>
               <button
-                class="btn btn-primary bg-banana-yellow text-chinese-black border-0 w-36"
+                class="btn btn-primary bg-banana-yellow text-chinese-black border-0 w-36 animate-bounce"
               >
                 Find a pet
               </button>
@@ -170,7 +187,7 @@
     <!-- Main Part -->
     <main>
       <!-- Browse by Category Section -->
-      <section class="md:container mx-auto pt-10 pb-10">
+      <section class="w-11/12 mx-auto pt-10 pb-10">
         <!-- Title of Category -->
         <div>
           <h2 class="mb-10 text-2xl font-bold">Browse By Categories</h2>
@@ -270,37 +287,31 @@
       </section>
       <!-- Product Section -->
       <section class="bg-floral-white">
-        <div class="container mx-auto pt-10 pb-10">
+        <div class="w-11/12 mx-auto pt-10 pb-10">
           <h2 class="text-2xl font-bold mb-10">Trending Pet Products</h2>
           <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
             <!-- Title Column -->
-            <div class="md:col-span-1">
+            <div class="col-span-3 md:col-span-1">
               <!-- card-left -->
-              <div class="card bg-flave-scent shadow-sm h-full overflow-hidden">
-                <div
-                  class="card-body flex flex-col items-start pt-4 pl-4 gap-4"
-                  style="
-                    background-image: url(assets/cute-pet-mid.png);
-                    background-size: 70%;
-                    background-repeat: no-repeat;
-                    background-position: bottom right;
-                  "
-                >
-                  <div class="space-y-2">
-                    <h2>T-Shirt for Dog</h2>
-                    <p class="card-title">
-                      Discover a world of treats, toysand essentials handpicked
-                      for
-                    </p>
-                    <button class="btn">Shop Now</button>
-                  </div>
+              <div class="w-full h-full card bg-flave-scent shadow-sm  overflow-hidden">
+                <div id="custom-style-product" class="card-body flex flex-col items-start pt-4 pl-4 gap-4">
+                  
+                    <div class="space-y-2">
+                      <h2>T-Shirt for Dog</h2>
+                      <p class="card-title">
+                        Discover a world of treats, toysand essentials
+                        handpicked for
+                      </p>
+                      <button class="btn">Shop Now</button>
+                    </div>                    
+                  
                 </div>
               </div>
             </div>
             <!-- Cards Column -->
             <div class="md:col-span-3 grid grid-cols-2 md:grid-cols-3 gap-2">
               <!-- card-1 -->
-              <div class="card bg-flave-scent shadow-sm h-28 overflow-hidden">
+              <div class="card bg-white shadow-sm h-28 overflow-hidden">
                 <div
                   class="card-body flex flex-row justify-center items-center p-4 gap-4"
                 >
@@ -320,7 +331,7 @@
               </div>
 
               <!-- card-2 -->
-              <div class="card bg-flave-scent shadow-sm h-28 overflow-hidden">
+              <div class="card bg-white shadow-sm h-28 overflow-hidden">
                 <div
                   class="card-body flex flex-row justify-center items-center p-4 gap-4"
                 >
@@ -340,7 +351,7 @@
               </div>
 
               <!-- card-3 -->
-              <div class="card bg-flave-scent shadow-sm h-28 overflow-hidden">
+              <div class="card bg-white shadow-sm h-28 overflow-hidden">
                 <div
                   class="card-body flex flex-row justify-center items-center p-4 gap-4"
                 >
@@ -360,7 +371,7 @@
               </div>
 
               <!-- card-4 -->
-              <div class="card bg-flave-scent shadow-sm h-28 overflow-hidden">
+              <div class="card bg-white shadow-sm h-28 overflow-hidden">
                 <div
                   class="card-body flex flex-row justify-center items-center p-4 gap-4"
                 >
@@ -380,7 +391,7 @@
               </div>
 
               <!-- card-5 -->
-              <div class="card bg-flave-scent shadow-sm h-28 overflow-hidden">
+              <div class="card bg-white shadow-sm h-28 overflow-hidden">
                 <div
                   class="card-body flex flex-row justify-center items-center p-4 gap-4"
                 >
@@ -400,7 +411,7 @@
               </div>
 
               <!-- card-6 -->
-              <div class="card bg-flave-scent shadow-sm h-28 overflow-hidden">
+              <div class="card bg-white shadow-sm h-28 overflow-hidden">
                 <div
                   class="card-body flex flex-row justify-center items-center p-4 gap-4"
                 >
@@ -420,7 +431,7 @@
               </div>
 
               <!-- card-7 -->
-              <div class="card bg-flave-scent shadow-sm h-28 overflow-hidden">
+              <div class="card bg-white shadow-sm h-28 overflow-hidden">
                 <div
                   class="card-body flex flex-row justify-center items-center p-4 gap-4"
                 >
@@ -440,7 +451,7 @@
               </div>
 
               <!-- card-8 -->
-              <div class="card bg-flave-scent shadow-sm h-28 overflow-hidden">
+              <div class="card bg-white shadow-sm h-28 overflow-hidden">
                 <div
                   class="card-body flex flex-row justify-center items-center p-4 gap-4"
                 >
@@ -461,7 +472,7 @@
 
               <!-- card-9 -->
               <div
-                class="card bg-flave-scent shadow-sm h-28 overflow-hidden hidden md:inline-block"
+                class="card bg-white shadow-sm h-28 overflow-hidden hidden md:inline-block"
               >
                 <div
                   class="card-body flex flex-row justify-center items-center p-4 gap-4"
@@ -485,54 +496,47 @@
         </div>
       </section>
       <!-- Every Day Low Price -->
-      <section class="md:container mx-auto pt-10 pb-10">
+      <section class="w-11/12 mx-auto pt-10 pb-10">
         <div>
           <h2>Every Day Low Price</h2>
 
           <!-- column section -->
-          <div class="grid grid-cols-3 gap-4 ">
+          <div class="grid grid-cols-3 gap-4">
             <div class="col-span-3 md:col-span-2">
               <!-- left column -->
               <div
-              class="card-body rounded-xl w-full h-96 flex flex-col items-start bg-violet-200 pt-4 pl-4 gap-4"
-              style="
-                background-image: url(assets/cute-dog-mid.png);
-                background-size: contain;
-                background-repeat: no-repeat;
-                background-position: bottom right;
-              "
-            >
-              <div class="space-y-2">
-                <h2>T-Shirt for Dog</h2>
-                <p class="card-title">
-                  Discover a world of treats, toysand essentials handpicked
-                  for
-                </p>
-                <button class="btn">Shop Now</button>
+                class="card-body rounded-xl w-full h-96 flex flex-col items-start bg-violet-200 pt-4 pl-4 gap-4"
+                style="
+                  background-image: url(assets/cute-dog-mid.png);
+                  background-size: contain;
+                  background-repeat: no-repeat;
+                  background-position: bottom right;
+                "
+              >
+                <div class="space-y-2">
+                  <h2>Under Price</h2>
+                  <p class="card-title">Pet Grooming Mitt</p>
+                  <h3>Easy Hair Removal</h3>
+                  <span>$7.99</span>
+                </div>
               </div>
-              </div>
-
             </div>
             <!-- right column -->
             <div class="col-span-3 md:col-span-1">
               <div
-              class="card-body rounded-xl w-full h-96 flex flex-col items-start bg-violet-200 pt-4 pl-4 gap-4"
-              style="
-                background-image: url(assets/cute-pet-mid.png);
-                background-size: contain;
-                background-repeat: no-repeat;
-                background-position: bottom right;
-              "
-            >
-              <div class="space-y-2 pt-10 pl-10">
-                <h2 class="text-2xl font-bold">T-Shirt for Dog</h2>
-                <p class="card-title">
-                  $85
-                </p>
-                
+                class="card-body rounded-xl w-full h-96 flex flex-col items-start bg-violet-200 pt-4 pl-4 gap-4"
+                style="
+                  background-image: url(assets/cute-pet-mid.png);
+                  background-size: contain;
+                  background-repeat: no-repeat;
+                  background-position: bottom right;
+                "
+              >
+                <div class="space-y-2 pt-10 pl-10">
+                  <h2 class="text-2xl font-bold">T-Shirt for Dog</h2>
+                  <p class="card-title">$85</p>
+                </div>
               </div>
-              </div>
-
             </div>
           </div>
         </div>
@@ -541,43 +545,59 @@
 
     <!-- Footer Section -->
     <footer class="bg-flave-scent-2 relative mt-64 pt-52">
-
-       <div class="container mx-auto pt-10 pb-10 bg-floral-white rounded-xl absolute left-1/2 transform -translate-x-1/2 -top-2/3 flex flex-row items-center justify-center gap-48 z-40">
-          <div>
-            <img class="size-full p-26" src="assets/cute-pet-mid.png" alt="">
-          </div>
-          <div class="space-y-4">
-            <h2>Get Pawsome News!</h2>
-            <p>Exclusive training tips, ticks, product deals and more.</p>
-            <input class="w-full p-4" type="text" placeholder="Enter email...">
-            <button class="btn bg-banana-yellow bg-xl">Subscribe</button>
-          </div>
-       </div>
-       <div class="container mx-auto">
+      <div
+        class="w-11/12 mx-auto pt-10 pb-10 bg-floral-white rounded-xl absolute left-1/2 transform -translate-x-1/2 -top-1/2 md:-top-2/3 flex flex-col md:flex-row items-left pl-10 md:items-center justify-center gap-10 md:gap-48 z-40"
+      >
+        <div>
+          <img
+            class="size-60 md:size-full p-26"
+            src="assets/cute-pet-mid.png"
+            alt=""
+          />
+        </div>
+        <div class="space-y-2 md:space-y-4">
+          <h2>Get Pawsome News!</h2>
+          <p>Exclusive training tips, ticks, product deals and more.</p>
+          <input class="w-full p-4" type="text" placeholder="Enter email..." />
+          <button class="btn bg-banana-yellow bg-xl">Subscribe</button>
+        </div>
+      </div>
+      <div class="w-11/12 mx-auto">
         <footer class="footer text-chinese-black p-10 flex-row justify-between">
           <nav>
-            <h6 class="footer-title">Services</h6>
-            <a class="link link-hover">Branding</a>
-            <a class="link link-hover">Design</a>
-            <a class="link link-hover">Marketing</a>
-            <a class="link link-hover">Advertisement</a>
+            <div class="flex flex-row items-center gap-4">
+              <img src="assets/logo-footer.png" alt="" />
+              <h3>Browse Pets</h3>
+            </div>
+            <p class="max-w-xs">
+              Discover a world of treats, toys, and essentials handpicked for
+              your furry friends
+            </p>
           </nav>
           <nav>
-            <h6 class="footer-title">Company</h6>
-            <a class="link link-hover">About us</a>
-            <a class="link link-hover">Contact</a>
-            <a class="link link-hover">Jobs</a>
-            <a class="link link-hover">Press kit</a>
+            <h6 class="footer-title">Find a pet</h6>
+            <a class="link link-hover">Breeds</a>
+            <a class="link link-hover">Contact us</a>
           </nav>
           <nav>
-            <h6 class="footer-title">Legal</h6>
-            <a class="link link-hover">Terms of use</a>
-            <a class="link link-hover">Privacy policy</a>
-            <a class="link link-hover">Cookie policy</a>
+            <h6 class="footer-title">Follow Us</h6>
+            <div class="flex flex-row gap-6">
+              <a class="link link-hover"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a class="link link-hover"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a class="link link-hover"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a class="link link-hover"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+            </div>
           </nav>
         </footer>
-       </div>
+      </div>
     </footer>
   </body>
 </html>
-
