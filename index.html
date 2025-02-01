@@ -61,53 +61,24 @@
     </script>
 
     <!-- Internal CSS -->
-    <style>
-      .adlam-font {
-        font-family: "ADLaM Display", serif;
-        font-weight: 400;
-        font-style: normal;
-      }
-
-      .sora {
-        font-family: "Sora", serif;
-        font-weight: 400;
-        font-style: normal;
-      }
-
-      .btn-border {
-        border: 1px solid #ffdc26;
-      }
-
-      #custom-style-product {
-        background-image: url("./assets/cute-pet-mid.png");
-        background-repeat: no-repeat;
-        background-position: right bottom;
-        background-size: 40%;
-        height: 350px;
-      }
-
-      #custom-style-product {
-        @media screen and (min-width: 768px) {
-          background-size: 70%;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <!-- Header Part -->
     <header>
-      <!-- navBar Styles -->
+      <!-- navBar Section -->
       <nav class="bg-floral-white">
         <div class="w-11/12 mx-auto navbar shadow-sm border-b-2 lg:border-b-0">
+          <!-- 1st Column of navBar Section -->
           <div class="navbar-start flex-1 lg:flex-none">
             <a class="btn btn-ghost text-xl">
               <img src="assets/logo-header.png" alt="header photo" />
-              <span
-                class="sora text-2xl text-chinese-black hidden lg:inline-block"
-                >Browse<span class="text-banana-yellow">4</span>Pets</span
-              ></a
-            >
+              <span class="sora text-2xl text-chinese-black hidden lg:inline-block">
+                Browse<span class="text-banana-yellow">4</span> Pets
+              </span>
+            </a>
           </div>
+          <!-- 2nd Column of navBar Section -->
           <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
               <li><a href="#">Find a pet</a></li>
@@ -115,15 +86,21 @@
               <li><a href="#">Contact us</a></li>
             </ul>
           </div>
+          <!-- 3rd Column of navBar Section -->
           <div class="navbar-end space-x-3 hidden lg:flex">
-            <a href="#"><i class="fa-regular fa-bell"></i></a>
-            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <!-- Bell &  Search icons in the 3rd Column of the navBar Section -->
+            <a href="#">
+              <i class="fa-regular fa-bell"></i>
+            </a>
+            <a href="#">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+            <!-- Buttons in the 3rd Column of the navBar Section  -->
             <a class="btn btn-border w-24" href="#">Login</a>
             <a class="btn bg-banana-yellow w-36" href="#">Register</a>
           </div>
-          <div
-            class="dropdown dropdown-bottom dropdown-end flex-none inline-block lg:hidden"
-          >
+          <!-- Hamburger Icon for Small Screen -->
+          <div class="dropdown dropdown-bottom dropdown-end flex-none inline-block lg:hidden">
             <div tabindex="0" role="button" class="btn btn-ghost">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -140,9 +117,8 @@
                 />
               </svg>
             </div>
-            <ul
-              class="menu menu-xs dropdown-content bg-base-100 rounded-box z-1 mt-3 w-44 p-2 shadow"
-            >
+            <!-- Links on Click Hamburger Icon -->
+            <ul class="menu menu-xs dropdown-content bg-base-100 rounded-box z-1 mt-3 w-44 p-2 shadow">
               <li><a href="#">Find a pet</a></li>
               <li><a href="#">Breeds</a></li>
               <li><a href="#">Contact us</a></li>
@@ -150,30 +126,22 @@
           </div>
         </div>
       </nav>
-      <!-- Hero Styles -->
-      <div class="w-11/12 mx-auto mt-8">
-        <div
-          class="hero bg-contain bg-no-repeat flex-col items-start justify-start animate-pulse"
-          style="
-            background-image: url(assets/cat-big.png);
-            background-position: center bottom;
-          "
-        >
+      <!-- Hero Section of the Header Part -->
+      <div class="w-11/12 mx-auto mt-8 ">
+        <div class="hero bg-contain bg-no-repeat flex-col items-start justify-start animate-pulse min-h-screen custom-style-hero-img">
           <div class="hero-content">
-            <div class="max-w-md">
-              <h1 class="mb-5 text-4xl font-bold">
+            <!-- Texts in the Hero Section -->
+            <div class="max-w-lg">
+              <h1 class="mb-5">
                 Pamper Your Pet,<br />
                 Because They Deserve<br />
                 the Bes
               </h1>
               <p class="mb-5">
-                Discover a world of treats, toys, and essentials handpicked
-                for<br />
+                Discover a world of treats, toys, and essentials handpicked for<br />
                 your furry friends. Shop now and make tails wag with joy!
               </p>
-              <button
-                class="btn btn-primary bg-banana-yellow text-chinese-black border-0 w-36 animate-bounce"
-              >
+              <button class="btn bg-banana-yellow border-0 w-36 animate-bounce">
                 Find a pet
               </button>
             </div>
@@ -188,7 +156,7 @@
       <section class="w-11/12 mx-auto pt-10 pb-10">
         <!-- Title of Category -->
         <div>
-          <h2 class="mb-10 text-2xl font-bold">Browse By Categories</h2>
+          <h2 class="mb-10">Browse By Categories</h2>
         </div>
         <!-- Cards Collection of Category -->
         <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
@@ -283,33 +251,28 @@
           </div>
         </div>
       </section>
-      <!-- Product Section -->
+      <!-- Trending Product Section -->
       <section class="bg-floral-white">
         <div class="w-11/12 mx-auto pt-10 pb-10">
-          <h2 class="text-2xl font-bold mb-10">Trending Pet Products</h2>
+          <!-- Title of Pet Products -->
+          <h2 class="mb-10">Trending Pet Products</h2>
+          <!-- Pet Trending Products Two Column -->
           <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
-            <!-- Title Column -->
+            <!-- Card of Pet Products 1st Column -->
             <div class="col-span-3 md:col-span-1">
-              <!-- card-left -->
-              <div
-                class="w-full h-full card bg-flave-scent shadow-sm overflow-hidden"
-              >
-                <div
-                  id="custom-style-product"
-                  class="card-body flex flex-col items-start pt-4 pl-4 gap-4"
-                >
+              <div class="w-full h-full card bg-flave-scent shadow-sm overflow-hidden">
+                <div class="card-body flex flex-col items-start pt-4 pl-4 gap-4 custom-style-product">
                   <div class="space-y-2">
-                    <h2>T-Shirt for Dog</h2>
-                    <p class="card-title">
-                      Discover a world of treats, toysand essentials handpicked
-                      for
+                    <h3>T-Shirt for Dog</h3>
+                    <p>
+                      Discover a world of treats, toysand essentials handpicked for
                     </p>
                     <button class="btn">Shop Now</button>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- Cards Column -->
+            <!-- Cards of Pet Products 2nd Column -->
             <div class="md:col-span-3 grid grid-cols-2 md:grid-cols-3 gap-2">
               <!-- card-1 -->
               <div class="card bg-white shadow-sm h-28 overflow-hidden">
@@ -322,11 +285,11 @@
                   </div>
                   <!-- card text -->
                   <div>
-                    <div>
+                    <span>
                       <i class="fa-regular fa-star bg-banana-yellow"></i> 4.5
-                    </div>
-                    <h4 class="card-title">Pet bed</h4>
-                    <p>$39.50</p>
+                    </span>
+                    <h5 class="card-title">Pet Bed</h5>
+                    <span>$39.50</span>
                   </div>
                 </div>
               </div>
@@ -342,11 +305,11 @@
                   </div>
                   <!-- card text -->
                   <div>
-                    <div>
+                    <span>
                       <i class="fa-regular fa-star bg-banana-yellow"></i> 4.5
-                    </div>
-                    <h4 class="card-title">Pet bed</h4>
-                    <p>$39.50</p>
+                    </span>
+                    <h5 class="card-title">Pet Food</h5>
+                    <span>$39.50</span>
                   </div>
                 </div>
               </div>
@@ -362,11 +325,11 @@
                   </div>
                   <!-- card text -->
                   <div>
-                    <div>
+                    <span>
                       <i class="fa-regular fa-star bg-banana-yellow"></i> 4.5
-                    </div>
-                    <h4 class="card-title">Pet bed</h4>
-                    <p>$39.50</p>
+                    </span>
+                    <h5 class="card-title">Pet Clothes</h5>
+                    <span>$39.50</span>
                   </div>
                 </div>
               </div>
@@ -382,11 +345,11 @@
                   </div>
                   <!-- card text -->
                   <div>
-                    <div>
+                    <span>
                       <i class="fa-regular fa-star bg-banana-yellow"></i> 4.5
-                    </div>
-                    <h4 class="card-title">Pet bed</h4>
-                    <p>$39.50</p>
+                    </span>
+                    <h5 class="card-title">Pet toy</h5>
+                    <span>$39.50</span>
                   </div>
                 </div>
               </div>
@@ -402,11 +365,11 @@
                   </div>
                   <!-- card text -->
                   <div>
-                    <div>
+                    <span>
                       <i class="fa-regular fa-star bg-banana-yellow"></i> 4.5
-                    </div>
-                    <h4 class="card-title">Pet bed</h4>
-                    <p>$39.50</p>
+                    </span>
+                    <h5 class="card-title">Pet Cosmetics</h5>
+                    <span>$39.50</span>
                   </div>
                 </div>
               </div>
@@ -422,11 +385,11 @@
                   </div>
                   <!-- card text -->
                   <div>
-                    <div>
+                    <span>
                       <i class="fa-regular fa-star bg-banana-yellow"></i> 4.5
-                    </div>
-                    <h4 class="card-title">Pet bed</h4>
-                    <p>$39.50</p>
+                    </span>
+                    <h5 class="card-title">Pet Health</h5>
+                    <span>$39.50</span>
                   </div>
                 </div>
               </div>
@@ -442,11 +405,11 @@
                   </div>
                   <!-- card text -->
                   <div>
-                    <div>
+                    <span>
                       <i class="fa-regular fa-star bg-banana-yellow"></i> 4.5
-                    </div>
-                    <h4 class="card-title">Pet bed</h4>
-                    <p>$39.50</p>
+                    </span>
+                    <h5 class="card-title">Pet Bedding</h5>
+                    <span>$39.50</span>
                   </div>
                 </div>
               </div>
@@ -462,11 +425,11 @@
                   </div>
                   <!-- card text -->
                   <div>
-                    <div>
+                    <span>
                       <i class="fa-regular fa-star bg-banana-yellow"></i> 4.5
-                    </div>
-                    <h4 class="card-title">Pet bed</h4>
-                    <p>$39.50</p>
+                    </span>
+                    <h5 class="card-title">Pet Management</h5>
+                    <span>$39.50</span>
                   </div>
                 </div>
               </div>
@@ -484,11 +447,11 @@
                   </div>
                   <!-- card text -->
                   <div>
-                    <div>
+                    <span>
                       <i class="fa-regular fa-star bg-banana-yellow"></i> 4.5
-                    </div>
-                    <h4 class="card-title">Pet bed</h4>
-                    <p>$39.50</p>
+                    </span>
+                    <h5 class="card-title">Pet Glass</h5>
+                    <span>$39.50</span>
                   </div>
                 </div>
               </div>
@@ -496,47 +459,38 @@
           </div>
         </div>
       </section>
-      <!-- Every Day Low Price -->
+      <!-- Every Day Low Price Section -->
       <section class="w-11/12 mx-auto pt-10 pb-10">
         <div>
-          <h2>Every Day Low Price</h2>
+          <!-- Title of Every Day Low Price Section -->
+          <h2 class="mb-10">Every Day Low Price</h2>
 
-          <!-- column section -->
+          <!-- Columns of the Every Day Low Price Section -->
           <div class="grid grid-cols-3 gap-4">
+            <!-- Left Column of Every Day Low Price Section -->
             <div class="col-span-3 md:col-span-2">
-              <!-- left column -->
-              <div
-                class="card-body rounded-xl w-full h-96 flex flex-col items-start bg-violet-200 pt-4 pl-4 gap-4"
-                style="
-                  background-image: url(assets/cute-dog-mid.png);
-                  background-size: contain;
-                  background-repeat: no-repeat;
-                  background-position: bottom right;
-                "
-              >
-                <div class="space-y-2">
-                  <h2>Under Price</h2>
-                  <p class="card-title">Pet Grooming Mitt</p>
-                  <h3>Easy Hair Removal</h3>
+              <div class="card-body rounded-xl w-full h-96 flex flex-row items-center pt-4 pl-4 gap-4 relative custom-style-ELP-left">
+                <div class="space-y-2 pl-10">
+                  <span>Under Price</span>
+                  <h3 class="card-title">
+                    Pet Grooming Mitt
+                  </h3>
+                  <h3>
+                    <span class="text-white block">(Easy Hair Removal)</span>
+                  </h3>
                   <span>$7.99</span>
                 </div>
+                <img class="w-1/3 absolute right-0 bottom-0" src="./assets/cute-dog-mid.png" alt="">
               </div>
             </div>
-            <!-- right column -->
+            <!-- Right Column of Every Day Low Price Section -->
             <div class="col-span-3 md:col-span-1">
-              <div
-                class="card-body rounded-xl w-full h-96 flex flex-col items-start bg-violet-200 pt-4 pl-4 gap-4"
-                style="
-                  background-image: url(assets/cute-pet-mid.png);
-                  background-size: contain;
-                  background-repeat: no-repeat;
-                  background-position: bottom right;
-                "
-              >
-                <div class="space-y-2 pt-10 pl-10">
-                  <h2 class="text-2xl font-bold">T-Shirt for Dog</h2>
+              <div class="card-body rounded-xl h-96 flex flex-col items-start justify-start relative custom-style-ELP-right">
+                <div class="space-y-2 ">
+                  <h3 class="">T-Shirt for Dog</h3>
                   <p class="card-title">$85</p>
                 </div>
+                  <img class="absolute -right-5 bottom-0" src="./assets/cute-pet-small.png" alt="">
               </div>
             </div>
           </div>
@@ -544,80 +498,88 @@
       </section>
 
       <!-- FAQ Section -->
-      <section
-        class="w-11/12 mx-auto flex flex-col lg:flex-row justify-between items-center"
-      >
-        <!-- Questions Column -->
-        <div class="flex-1 order-2 lg:order-1">
-          <div class="collapse collapse-arrow bg-base-200">
-            <input type="radio" name="my-accordion-2" checked="checked" />
-            <div class="collapse-title text-xl font-medium">
-              How do you ensure the safety of pets during shipping?
+      <section class="w-11/12 mx-auto pb-16">
+        <!-- Title of FAQ Section -->
+        <h2>Available FAQ</h2>
+        <!-- Columns of FAQ Section -->
+        <div class="flex flex-col lg:flex-row justify-between items-center">
+          <!-- Quiestions Column of FAQ Section Left -->
+          <div class="flex-1 order-2 lg:order-1">
+            <!-- Question: 1 of FAQ -->
+            <div class="collapse collapse-arrow bg-base-200">
+              <input type="radio" name="my-accordion-2" checked="checked" />
+              <div class="collapse-title text-xl font-medium">
+                How do you ensure the safety of pets during shipping?
+              </div>
+              <div class="collapse-content">
+                <p>
+                  Pets are placed in specially designed, secure, and comfortable
+                  carriers that ensure their well-being throughout the journey.
+                  We use temperature-controlled environments to keep pets
+                  comfortable, regardless of weather conditions.
+                </p>
+              </div>
             </div>
-            <div class="collapse-content">
-              <p>
-                Pets are placed in specially designed, secure, and comfortable
-                carriers that ensure their well-being throughout the journey. We
-                use temperature-controlled environments to keep pets
-                comfortable, regardless of weather conditions.
-              </p>
+            <!-- Question: 2 of FAQ -->
+            <div class="collapse collapse-arrow bg-base-200">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium">
+                How long does delivery take?
+              </div>
+              <div class="collapse-content">
+                <p>
+                  The delivery time can vary depending on a few factors, such as
+                  your location, the availability of the pet or product, and the
+                  shipping method chosen. Generally, here are some estimated
+                  delivery times:<br /><br />
+                  <strong>Local Deliveries:</strong> If you're located within
+                  the same city or region as our shipping facility, deliveries
+                  typically take 1-3 business days. <br /><br />
+                  <strong>Domestic Deliveries:</strong> For deliveries within
+                  the same country, it usually takes 3-7 business days.
+                </p>
+              </div>
+            </div>
+            <!-- Question: 3 of FAQ -->
+            <div class="collapse collapse-arrow bg-base-200">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium">
+                How can I adopt a pet from your website?
+              </div>
+              <div class="collapse-content">
+                <p>
+                  Adopting a pet from our website is a straightforward and
+                  rewarding process. Here’s how you can go about it:
+                  <br /><br />
+                  <strong>Browse Available Pets:</strong> Start by exploring our
+                  website's pet adoption section. You can filter pets by type,
+                  age, breed, and other preferences to find the perfect match
+                  for you. <br /><br />
+                  <strong>Learn About the Pet:</strong> Each pet has a detailed
+                  profile with information about its temperament, health status,
+                  and background. Make sure to read through this information to
+                  ensure the pet is a good fit for your home and lifestyle.
+                  <br /><br />
+                  <strong>Submit an Application:</strong> Once you've found a
+                  pet you'd like to adopt, click on the "Adopt" button to fill
+                  out an adoption application. Provide all the necessary
+                  information about yourself, your living situation, and your
+                  experience with pets.
+                </p>
+              </div>
             </div>
           </div>
-          <div class="collapse collapse-arrow bg-base-200">
-            <input type="radio" name="my-accordion-2" />
-            <div class="collapse-title text-xl font-medium">
-              How long does delivery take?
-            </div>
-            <div class="collapse-content">
-              <p>
-                The delivery time can vary depending on a few factors, such as
-                your location, the availability of the pet or product, and the
-                shipping method chosen. Generally, here are some estimated
-                delivery times:<br /><br>
-                <strong>Local Deliveries:</strong> If you're located within the same city or
-                region as our shipping facility, deliveries typically take 1-3
-                business days. <br /><br>
-                <strong>Domestic Deliveries:</strong> For deliveries within the same country, it
-                usually takes 3-7 business days.
-              </p>
-            </div>
+          <!-- Image Column of FAQ Section Right -->
+          <div class="w-1/2 order-1 lg:order-2">
+            <img class="size-full" src="assets/faq.jpg" alt="faq image" />
           </div>
-          <div class="collapse collapse-arrow bg-base-200">
-            <input type="radio" name="my-accordion-2" />
-            <div class="collapse-title text-xl font-medium">
-              How can I adopt a pet from your website?
-            </div>
-            <div class="collapse-content">
-              <p>
-                Adopting a pet from our website is a straightforward and
-                rewarding process. Here’s how you can go about it:
-                <br /><br>
-                <strong>Browse Available Pets:</strong> Start by exploring our website's pet
-                adoption section. You can filter pets by type, age, breed, and
-                other preferences to find the perfect match for you.
-                <br /><br>
-                <strong>Learn About the Pet:</strong> Each pet has a detailed profile with
-                information about its temperament, health status, and
-                background. Make sure to read through this information to ensure
-                the pet is a good fit for your home and lifestyle.
-                <br /><br>
-                <strong>Submit an Application:</strong> Once you've found a pet you'd like to
-                adopt, click on the "Adopt" button to fill out an adoption
-                application. Provide all the necessary information about
-                yourself, your living situation, and your experience with pets.
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- Image Column -->
-        <div class="w-1/2 order-1 lg:order-2">
-          <img class="size-full" src="assets/faq.jpg" alt="faq image" />
         </div>
       </section>
     </main>
 
-    <!-- Footer Section -->
-    <footer class="bg-flave-scent-2 relative mt-64 pt-52">
+    <!-- Footer Part -->
+    <footer class="bg-flave-scent-2 relative mt-72 pt-52">
+      <!-- Floatin Top of the Footer Section -->
       <div
         class="w-11/12 mx-auto pt-10 pb-10 bg-floral-white rounded-xl absolute left-1/2 transform -translate-x-1/2 -top-1/2 md:-top-2/3 flex flex-col md:flex-row items-left pl-10 md:items-center justify-center gap-10 md:gap-48 z-40"
       >
@@ -635,8 +597,10 @@
           <button class="btn bg-banana-yellow bg-xl">Subscribe</button>
         </div>
       </div>
+      <!-- Footer Back of the Footer Section -->
       <div class="w-11/12 mx-auto">
         <footer class="footer text-chinese-black p-10 flex-row justify-between">
+          <!-- 1st Column of the Footer Back -->
           <nav>
             <div class="flex flex-row items-center gap-4">
               <img src="assets/logo-footer.png" alt="" />
@@ -647,26 +611,28 @@
               your furry friends
             </p>
           </nav>
+          <!-- 2nd Column of the Footer Back -->
           <nav>
             <h6 class="footer-title">Find a pet</h6>
-            <a class="link link-hover">Breeds</a>
-            <a class="link link-hover">Contact us</a>
+            <a class="link link-hover"> Breeds </a>
+            <a class="link link-hover"> Contact us </a>
           </nav>
+          <!-- 3rd Column of the Footer Back -->
           <nav>
             <h6 class="footer-title">Follow Us</h6>
             <div class="flex flex-row gap-6">
-              <a class="link link-hover"
-                ><i class="fa-brands fa-facebook"></i
-              ></a>
-              <a class="link link-hover"
-                ><i class="fa-brands fa-instagram"></i
-              ></a>
-              <a class="link link-hover"
-                ><i class="fa-brands fa-linkedin"></i
-              ></a>
-              <a class="link link-hover"
-                ><i class="fa-brands fa-youtube"></i
-              ></a>
+              <a class="link link-hover">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a class="link link-hover">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a class="link link-hover">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a class="link link-hover">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
             </div>
           </nav>
         </footer>
