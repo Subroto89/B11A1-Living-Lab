@@ -9,7 +9,7 @@
 
 
 /* Fonts Style */
-h1,h2,h3,h4{
+/* h1,h2,h3,h4{
     font-family: "ADLaM Display", serif;
     font-weight: 400;
     font-style: normal;
@@ -44,13 +44,13 @@ h5{
     color: var(--black); 
 }
 
-p,button,a{
+/* p,button,a{
     font-family: "Sora", serif;
     font-size: 1rem !important;
     font-weight: 400 !important;
     font-style: normal;
-    color: var(--chinese-black) !important; 
-}
+    /* color: var(--chinese-black) !important;  */
+} */ */
 
 .btn-border {
   border: 1px solid #ffdc26;
