@@ -78,16 +78,16 @@
         border: 1px solid #ffdc26;
       }
 
-      #custom-style-product{
+      #custom-style-product {
         background-image: url("./assets/cute-pet-mid.png");
         background-repeat: no-repeat;
         background-position: right bottom;
         background-size: 40%;
         height: 350px;
       }
-      
-      #custom-style-product{
-        @media screen and (min-width:768px) {
+
+      #custom-style-product {
+        @media screen and (min-width: 768px) {
           background-size: 70%;
         }
       }
@@ -98,9 +98,7 @@
     <header>
       <!-- navBar Styles -->
       <nav class="bg-floral-white">
-        <div
-          class="w-11/12 mx-auto navbar shadow-sm border-b-2 lg:border-b-0"
-        >
+        <div class="w-11/12 mx-auto navbar shadow-sm border-b-2 lg:border-b-0">
           <div class="navbar-start flex-1 lg:flex-none">
             <a class="btn btn-ghost text-xl">
               <img src="assets/logo-header.png" alt="header photo" />
@@ -293,18 +291,21 @@
             <!-- Title Column -->
             <div class="col-span-3 md:col-span-1">
               <!-- card-left -->
-              <div class="w-full h-full card bg-flave-scent shadow-sm  overflow-hidden">
-                <div id="custom-style-product" class="card-body flex flex-col items-start pt-4 pl-4 gap-4">
-                  
-                    <div class="space-y-2">
-                      <h2>T-Shirt for Dog</h2>
-                      <p class="card-title">
-                        Discover a world of treats, toysand essentials
-                        handpicked for
-                      </p>
-                      <button class="btn">Shop Now</button>
-                    </div>                    
-                  
+              <div
+                class="w-full h-full card bg-flave-scent shadow-sm overflow-hidden"
+              >
+                <div
+                  id="custom-style-product"
+                  class="card-body flex flex-col items-start pt-4 pl-4 gap-4"
+                >
+                  <div class="space-y-2">
+                    <h2>T-Shirt for Dog</h2>
+                    <p class="card-title">
+                      Discover a world of treats, toysand essentials handpicked
+                      for
+                    </p>
+                    <button class="btn">Shop Now</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -539,6 +540,78 @@
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section
+        class="w-11/12 mx-auto flex flex-col lg:flex-row justify-between items-center"
+      >
+        <!-- Questions Column -->
+        <div class="flex-1 order-2 lg:order-1">
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">
+              How do you ensure the safety of pets during shipping?
+            </div>
+            <div class="collapse-content">
+              <p>
+                Pets are placed in specially designed, secure, and comfortable
+                carriers that ensure their well-being throughout the journey. We
+                use temperature-controlled environments to keep pets
+                comfortable, regardless of weather conditions.
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">
+              How long does delivery take?
+            </div>
+            <div class="collapse-content">
+              <p>
+                The delivery time can vary depending on a few factors, such as
+                your location, the availability of the pet or product, and the
+                shipping method chosen. Generally, here are some estimated
+                delivery times:<br /><br>
+                <strong>Local Deliveries:</strong> If you're located within the same city or
+                region as our shipping facility, deliveries typically take 1-3
+                business days. <br /><br>
+                <strong>Domestic Deliveries:</strong> For deliveries within the same country, it
+                usually takes 3-7 business days.
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">
+              How can I adopt a pet from your website?
+            </div>
+            <div class="collapse-content">
+              <p>
+                Adopting a pet from our website is a straightforward and
+                rewarding process. Here’s how you can go about it:
+                <br /><br>
+                <strong>Browse Available Pets:</strong> Start by exploring our website's pet
+                adoption section. You can filter pets by type, age, breed, and
+                other preferences to find the perfect match for you.
+                <br /><br>
+                <strong>Learn About the Pet:</strong> Each pet has a detailed profile with
+                information about its temperament, health status, and
+                background. Make sure to read through this information to ensure
+                the pet is a good fit for your home and lifestyle.
+                <br /><br>
+                <strong>Submit an Application:</strong> Once you've found a pet you'd like to
+                adopt, click on the "Adopt" button to fill out an adoption
+                application. Provide all the necessary information about
+                yourself, your living situation, and your experience with pets.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Image Column -->
+        <div class="w-1/2 order-1 lg:order-2">
+          <img class="size-full" src="assets/faq.jpg" alt="faq image" />
         </div>
       </section>
     </main>
